@@ -31,14 +31,20 @@ const Header = () => {
           </nav>
 
           {/* Desktop Phone Icon */}
-          <a className="hidden md:flex items-center text-logo-gold hover:text-logo-gray transition-all">
+          <a
+            href="tel:03142265033"
+            className="hidden md:flex items-center text-logo-gold hover:text-logo-gray transition-all"
+          >
             <Phone className="w-6 h-6" />
           </a>
 
           {/* Mobile Phone + Hamburger */}
           <div className="flex items-center space-x-4 md:hidden">
             {/* Mobile Phone Icon */}
-            <a className="flex items-center text-logo-gold hover:text-logo-gray transition-all">
+            <a
+              href="tel:03142265033"
+              className="flex items-center text-logo-gold hover:text-logo-gray transition-all"
+            >
               <Phone className="w-6 h-6" />
             </a>
 

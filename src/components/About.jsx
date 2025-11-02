@@ -35,7 +35,7 @@ const About = () => {
             </span>
 
             <p className="mt-6 text-lg text-logo-black/80">
-              Welcome to Million Engineering Solutions, your global partner for advanced filtration, heat exchange, and dust collection systems. Operating from Pakistan, we leverage state-of-the-art technology and years of expertise to provide solutions that drive cleaner and more efficient industrial operations.
+              Welcome to Million Engineering, your global partner for advanced filtration, heat exchange, and dust collection systems. Operating from Pakistan, we leverage state-of-the-art technology and years of expertise to provide solutions that drive cleaner and more efficient industrial operations.
             </p>
 
             {/* Tabs */}

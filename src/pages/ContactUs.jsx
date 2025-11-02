@@ -43,17 +43,17 @@ const ContactUs = () => {
 
             <p className="font-semibold mb-1">Phone:</p>
             <div className="flex flex-col mb-3 space-y-1">
-              <a href="tel:+923168942389" className="text-black underline">
+              <a href="tel:03142265033" className="text-black underline">
                 +92 314 2265033
               </a>
-              <a href="tel:+923482218215" className="text-black underline">
+              <a href="tel:03463697758" className="text-black underline">
                 +92 346 3697758
               </a>
             </div>
 
             <p className="font-semibold mb-1">Email:</p>
             <a
-              href="mailto:sales@millioneng.com"
+              href=""
               className="text-black underline"
             >
               millioneng97@gmail.com
@@ -64,7 +64,7 @@ const ContactUs = () => {
           <div className="md:w-[100%]">
             <iframe
               title="Pakistan Head Office Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.621908872142!2d67.11251157507562!3d24.841236577938093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33a078b8c6ab7%3A0xaaa5a913e8c3b05c!2sKorangi%20No.%204%2C%20Karachi!5e0!3m2!1sen!2s!4v1709876543210!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d905.2439610800216!2d67.16290286225026!3d24.83049967827766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ5JzUwLjUiTiA2N8KwMDknNDcuOCJF!5e0!3m2!1sen!2s!4v1762101988743!5m2!1sen!2s"
               className="w-full h-72 border rounded-lg shadow"
               allowFullScreen=""
               loading="lazy"

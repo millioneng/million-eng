@@ -9,7 +9,7 @@ import GlobeAltIcon from "./icons/GlobeAltIcon";
 
 const GlobalReach = () => {
   // --- Inner Reusable Component: ContactCard ---
-  const ContactCard = ({ country, address, phone, email, web }) => (
+  const ContactCard = ({ country, address, phone, email, web, mapLink }) => (
     <div className="p-8 text-logo-gold rounded-lg shadow-lg border-b-4 border-logo-gold">
       <h3 className="mb-6 text-3xl font-bold text-gray-900">{country}</h3>
       <div className="space-y-4 text-gray-600">
@@ -30,8 +30,12 @@ const GlobalReach = () => {
           <span>{web}</span>
         </div>
       </div>
+
+      {/* Direction Button */}
       <a
-        href="#"
+        href={mapLink}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center px-6 py-3 mt-8 bg-logo-gold text-logo-black font-semibold rounded-md hover:bg-logo-gray hover:text-logo-gold transition-all"
       >
         DIRECTION
@@ -76,6 +80,7 @@ const GlobalReach = () => {
             phone="+92 314 2265033"
             email="millioneng97@gmail.com"
             web="www.millioneng.com"
+            mapLink="https://maps.app.goo.gl/oXM3TpEv9NQGXPHa8"
           />
         </div>
       </div>

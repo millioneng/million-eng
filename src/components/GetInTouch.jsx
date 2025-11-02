@@ -41,7 +41,7 @@ export const GetInTouch = () => {
     setResult("");
 
     const data = {
-      access_key: "eb701559-7ea9-4ebf-8dae-cdbae2c51c02", // <-- Replace with your Web3Forms Access Key
+      access_key: "f1eda530-ae5a-4f49-ad2e-a35196921f42", // <-- Replace with your Web3Forms Access Key
       name: formData.name,
       email: formData.email,
       subject: formData.subject,

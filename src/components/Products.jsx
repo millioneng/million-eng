@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Import images
 import filterBagsImg from '../images/Filter Bag.png';
@@ -26,27 +27,47 @@ const ServiceCard = ({ image, title, description }) => (
     </div>
     <h3 className="text-xl font-semibold text-[#d4af37] mb-3">{title}</h3>
     <p className="text-white mb-6 flex-grow">{description}</p>
-    <a href="/contact-us" className="block w-1/2 px-6 py-2 bg-[#d4af37] text-black-700 font-semibold uppercase tracking-wider rounded-full text-sm hover:bg-[#c9a23a]">Get a Quote</a>
+    <a
+      href="/contact-us"
+      className="block w-1/2 px-6 py-2 bg-[#d4af37] text-black-700 font-semibold uppercase tracking-wider rounded-full text-sm hover:bg-[#c9a23a]"
+    >
+      Get a Quote
+    </a>
   </div>
 );
 
-const Products = () => (
-  <section className="py-24 bg-white">
-    <div className="container mx-auto px-6 max-w-7xl">
-      <div className="flex flex-col md:flex-row justify-between items-center mb-16">
-        <div className="text-center md:text-left mb-8 md:mb-0">
-          <span className="text-brand-blue-700 font-semibold uppercase tracking-wider">Build Your Dream</span>
-          <h2 className="mt-2 text-4xl font-bold text-logo-black">Quality Services</h2>
+const Products = () => {
+  const navigate = useNavigate();
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
+          <div className="text-center md:text-left mb-8 md:mb-0">
+            <span className="text-brand-blue-700 font-semibold uppercase tracking-wider">Build Your Dream</span>
+            <h2 className="mt-2 text-4xl font-bold text-logo-black">Quality Services</h2>
+          </div>
+          <button
+            onClick={() => navigate("/products")}
+            className="px-8 py-3 border border-logo-gold text-logo-gold hover:bg-logo-gold hover:text-logo-black rounded-full transition-all"
+          >
+            View All
+          </button>
         </div>
-        <a href="#" className="px-8 py-3 border border-logo-gold text-logo-gold hover:bg-logo-gold hover:text-logo-black rounded-full transition-all">View All</a>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {servicesData.map((service) => (
+            <ServiceCard
+              key={service.title}
+              image={service.image}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {servicesData.map((service) => (
-          <ServiceCard key={service.title} image={service.image} title={service.title} description={service.description} />
-        ))}
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Products;

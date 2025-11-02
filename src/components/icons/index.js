@@ -1,0 +1,14 @@
+export { default as FilterIcon } from './FilterIcon';
+export { default as CartridgeIcon } from './CartridgeIcon';
+export { default as HeatExchangerIcon } from './HeatExchangerIcon';
+export { default as DustCollectorIcon } from './DustCollectorIcon';
+export { default as HousingIcon } from './HousingIcon';
+export { default as CoolingTowerIcon } from './CoolingTowerIcon';
+export { default as PressureLeafIcon } from './PressureLeafIcon';
+export { default as OilGasIcon } from './OilGasIcon';
+export { default as PowerPlantIcon } from './PowerPlantIcon';
+export { default as ChemicalIcon } from './ChemicalIcon';
+export { default as SugarIcon } from './SugarIcon';
+export { default as PharmaIcon } from './PharmaIcon';
+export { default as FoodIcon } from './FoodIcon';
+export { default as CementIcon } from './CementIcon';

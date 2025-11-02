@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative text-white min-h-screen bg-cover bg-center flex items-center"
+      className="relative text-white min-h-screen bg-cover bg-center flex items-center mt-20"
       style={{ backgroundImage: `url(${heroBanner})` }}
     >
       {/* Blue fade overlay */}

@@ -1,10 +1,10 @@
 import React from "react";
 import GetInTouch from "../components/GetInTouch";
-import bgImage from "../images/products_hero-section-banner.jpg"; // <-- replace with your actual image path
+import bgImage from "../images/products_hero-section-banner.png"; // <-- replace with your actual image path
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="mt-20">
       {/* Hero Section */}
       <div
         className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"
@@ -56,7 +56,7 @@ const ContactUs = () => {
               href="mailto:sales@millioneng.com"
               className="text-black underline"
             >
-              alvinlazarus97@gmail.com
+              millioneng97@gmail.com
             </a>
           </div>
 

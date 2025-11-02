@@ -2,7 +2,7 @@ import React from 'react';
 
 // Import images
 import filterBagsImg from '../images/Filter Bag.png';
-import filterCartridgesImg from '../images/Filter Bag.png';
+import filterCartridgesImg from '../images/Filter Cartridge.png';
 import heatExchangerImg from '../images/PHE Heat Exchanger.png';
 import dustCollectorImg from '../images/Dust Collector and Cage .png';
 import filterHousingsImg from '../images/Filter Housing 1 .png';

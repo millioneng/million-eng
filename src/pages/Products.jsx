@@ -1,10 +1,10 @@
 import React from "react";
 import Products from "../components/Products";
-import bgImage from "../images/products_hero-section-banner.jpg"; // <-- replace with your actual image path
+import bgImage from "../images/products_hero-section-banner.png"; // <-- replace with your actual image path
 
 const ProductsPage = () => {
   return (
-    <div>
+    <div className="mt-20">
       {/* Hero Section */}
       <div
         className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"

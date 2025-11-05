@@ -1,10 +1,19 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import GetInTouch from "../components/GetInTouch";
 import bgImage from "../images/products_hero-section-banner.png"; // <-- replace with your actual image path
 
 const ContactUs = () => {
   return (
     <div className="mt-20">
+      {/* ✅ Dynamic Page Title */}
+      <Helmet>
+        <title>Million Engineering | Contact Us</title>
+        <meta
+          name="description"
+          content="Explore Million Engineering’s range of high-performance filtration systems, heat exchangers, and industrial solutions built for efficiency and reliability."
+        />
+      </Helmet>
       {/* Hero Section */}
       <div
         className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"

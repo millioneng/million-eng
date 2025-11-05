@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 
 export const GetInTouch = () => {
@@ -167,6 +167,7 @@ export const GetInTouch = () => {
 // --- Sub Component: FAQ Item ---
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef(null);
 
   return (
     <div
@@ -180,16 +181,19 @@ const FAQItem = ({ question, answer }) => {
       >
         <span className="text-lg font-medium text-black">{question}</span>
         {isOpen ? (
-          <MinusIcon className="w-7 h-7 text-[#d4af37] font-extrabold transform scale-110" />
+          <MinusIcon className="w-7 h-7 text-[#d4af37]" />
         ) : (
-          <PlusIcon className="w-7 h-7 text-gray-600 font-extrabold transform scale-110" />
+          <PlusIcon className="w-7 h-7 text-gray-600" />
         )}
       </button>
 
       <div
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        ref={contentRef}
+        style={{
+          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
+          opacity: isOpen ? 1 : 0,
+        }}
+        className="transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden"
       >
         <div className="px-6 pb-5">
           <p className="text-gray-700">{answer}</p>

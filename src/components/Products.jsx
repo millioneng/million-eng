@@ -1,7 +1,7 @@
+// Products.jsx
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-// Import images
 import filterBagsImg from '../images/Filter Bag.png';
 import filterCartridgesImg from '../images/Filter Cartridge.png';
 import heatExchangerImg from '../images/PHE Heat Exchanger.png';
@@ -21,7 +21,10 @@ const servicesData = [
 ];
 
 const ServiceCard = ({ image, title, description }) => (
-  <div className="relative flex flex-col border-b-4 border-[#d4af37] justify-between h-full p-10 transition-all duration-300 bg-[#2d2d2d] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1">
+  <div
+    id={title.replace(/\s+/g, '-').toLowerCase()} // ← unique ID for scrolling
+    className="relative flex flex-col border-b-4 border-[#d4af37] justify-between h-full p-10 transition-all duration-300 bg-[#2d2d2d] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1"
+  >
     <div className="mb-5 w-full">
       <img src={image} alt={title} className="w-full h-48 object-contain rounded-none" />
     </div>
@@ -38,6 +41,20 @@ const ServiceCard = ({ image, title, description }) => (
 
 const Products = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // 👇 Scroll smoothly if there's a hash in the URL
+  React.useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      }
+    }
+  }, [location]);
 
   return (
     <section className="py-24 bg-white">

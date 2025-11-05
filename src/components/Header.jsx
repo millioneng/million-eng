@@ -11,11 +11,13 @@ const Header = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <img
-            src={logo}
-            alt="Million Engineering Logo"
-            className="h-20 w-auto object-contain"
-          />
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+  <img
+    src={logo}
+    alt="Million Engineering Logo"
+    className="h-20 w-auto object-contain cursor-pointer"
+  />
+</Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8">

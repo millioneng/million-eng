@@ -43,14 +43,15 @@ const Footer = () => (
         <div>
           <h4 className="text-xl font-semibold text-white mb-6 uppercase tracking-wider">Products</h4>
           <ul className="space-y-3">
-            <li><Link to="/products" className="hover:text-white transition-colors">Filter Bags</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Filter Cartridges</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Plate Type Heat Exchangers</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Dust Collector Bags</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Filter Housings</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Cooling Tower</Link></li>
-            <li><Link to="/products" className="hover:text-white transition-colors">Pressure Leaf Filter</Link></li>
-          </ul>
+  <li><Link to="/products#filter-bags" className="hover:text-white transition-colors">Filter Bags</Link></li>
+  <li><Link to="/products#filter-cartridges" className="hover:text-white transition-colors">Filter Cartridges</Link></li>
+  <li><Link to="/products#plate-type-heat-exchangers" className="hover:text-white transition-colors">Plate Type Heat Exchangers</Link></li>
+  <li><Link to="/products#dust-collector-bags" className="hover:text-white transition-colors">Dust Collector Bags</Link></li>
+  <li><Link to="/products#filter-housings" className="hover:text-white transition-colors">Filter Housings</Link></li>
+  <li><Link to="/products#cooling-tower" className="hover:text-white transition-colors">Cooling Tower</Link></li>
+  <li><Link to="/products#pressure-leaf-filter" className="hover:text-white transition-colors">Pressure Leaf Filter</Link></li>
+</ul>
+
         </div>
 
         <div>

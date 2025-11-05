@@ -15,16 +15,16 @@ const Footer = () => (
             Million Engineering delivers top-tier engineering services and industrial product solutions across sectors, committed to innovation and reliability.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
+            <a className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
               <Facebook className="w-5 h-5 text-white" />
             </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
+            <a className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
               <Twitter className="w-5 h-5 text-white" />
             </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
+            <a className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
               <Linkedin className="w-5 h-5 text-white" />
             </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
+            <a className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-brand-blue-600">
               <Instagram className="w-5 h-5 text-white" />
             </a>
           </div>

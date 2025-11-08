@@ -49,7 +49,7 @@ const GlobalReach = () => {
     <section className="py-20 bg-gray-50">
       <div className="container px-6 mx-auto max-w-7xl lg:px-8">
         {/* Header Left-Right Layout */}
-        <div className="flex flex-col items-center justify-between mb-16 space-y-8 text-center lg:flex-row lg:space-y-0 lg:text-left">
+        <div className="flex flex-col items-center justify-between mb-16 space-y-8 text-center lg:flex-row lg:space-y-0 lg:space-x-16 lg:text-left">
           {/* Left Side */}
           <div className="lg:w-1/2">
             <h2 className="mb-2 text-xl font-bold text-gray-900 lg:text-2xl">
@@ -64,10 +64,9 @@ const GlobalReach = () => {
           <div className="lg:w-1/2">
             <p className="text-lg text-gray-700 leading-relaxed">
               At Million Engineering, precision drives sustainability. Our advanced
-              filtration systems, heat exchangers, and dust collectors are
-              engineered to minimize waste, conserve energy, and reduce
-              environmental impact—helping industries achieve global standards
-              while enhancing efficiency.
+              filtration systems, heat exchangers, and dust collectors are engineered
+              to minimize waste, conserve energy, and reduce environmental impact—
+              helping industries achieve global standards while enhancing efficiency.
             </p>
           </div>
         </div>

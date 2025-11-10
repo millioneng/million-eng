@@ -47,7 +47,7 @@ const ContactUs = () => {
             <p className="text-gray-700 mb-3">
               Plot # 18, Sector 35-D, Near Edhi Center,
               <br />
-              Korangi # , Karachi - Pakistan.
+              Korangi # 5, Karachi - Pakistan.
             </p>
 
             <p className="font-semibold mb-1">Phone:</p>

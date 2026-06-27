@@ -77,7 +77,7 @@ const GlobalReach = () => {
             country="PAKISTAN"
             address="Plot # 18, Sector 35-D, Near Edhi Center, Korangi # 5, Karachi, Pakistan"
             phone="+92 314 2265033"
-            email="millioneng97@gmail.com"
+            email="info@millioneng.com"
             web="www.millioneng.com"
             mapLink="https://maps.app.goo.gl/oXM3TpEv9NQGXPHa8"
           />

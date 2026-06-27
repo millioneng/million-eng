@@ -65,7 +65,7 @@ const ContactUs = () => {
               href=""
               className="text-black underline"
             >
-              millioneng97@gmail.com
+              info@millioneng.com
             </a>
           </div>
 
